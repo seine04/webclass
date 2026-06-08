@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게임 상세 정보</title>
+    <link rel="stylesheet" href="../css/게임상세.css">
+    <link rel="stylesheet" href="../css/메인기본.css">
+</head>
+
+<body>
+
+<header class="steam-header">
+    <div class="logo-area">
+        <div class="container">
+            <a href="/" class="main-logo">
+                <span class="logo-text">Web For Indie Game</span>
+            </a>
+        </div>
+    </div>
+
+    <nav class="nav-bar">
+        <div class="container">
+            <ul class="menu-list">
+                <li><a href="../index.html">홈</a></li>
+                <li><a href="./2.카테고리.html">카테고리</a></li>
+                <li><a href="./3.즐겨찾기.html">즐겨찾기</a></li>
+                <li><a href="./4.검색.html">검색</a></li>
+                <li><a href="./5.커뮤니티.html">커뮤니티</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main class="content-area">
+    <div class="container">
+        <h2 id="detail-title" class="game-main-title">게임 제목</h2>
+
+        <div class="detail-container">
+            <div class="detail-main-img">
+                <img id="detail-img" src="" alt="게임 이미지">
+            </div>
+
+            <div class="detail-summary-box">
+                <p class="summary-text" id="detail-desc">게임에 대한 설명 공간입니다.</p>
+                
+                <div class="info-line">
+                    <span class="info-label">모든 평가:</span>
+                    <span class="info-value positive">매우 긍정적</span>
+                </div>
+                <div class="info-line">
+                    <span class="info-label">출시일:</span>
+                    <span class="info-value" id="detail-release">-</span>
+                </div>
+                <div class="info-line">
+                    <span class="info-label">개발자:</span>
+                    <span class="info-value" id="detail-developer">-</span>
+                </div>
+                <div class="info-line">
+                    <span class="info-label">태그:</span>
+                    <span class="info-value tags" id="detail-tags">-</span>
+                </div>
+
+                <div class="detail-action-zone">
+                    <div class="detail-price" id="detail-price">₩ 0</div>
+                    <div class="btn-group">
+                        <button class="buy-btn" onclick="redirectToPurchaseSite()">게임구매 사이트로 이동 ➔</button>
+                        <button class="detail-wish-btn" id="wish-trigger" onclick="toggleWishlist()">즐겨찾기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sys-req-container">
+            <h3 class="sys-req-title">시스템 요구 사항</h3>
+            <div class="sys-req-box">
+                <div class="req-column">
+                    <h4 class="req-type">최소 사양:</h4>
+                    <ul id="min-req-list">
+                        <li>운영체제: -</li>
+                        <li>프로세서: -</li>
+                        <li>메모리: -</li>
+                        <li>그래픽: -</li>
+                        <li>저장공간: -</li>
+                    </ul>
+                </div>
+                <div class="req-column">
+                    <h4 class="req-type">권장 사양:</h4>
+                    <ul id="req-req-list">
+                        <li>운영체제: -</li>
+                        <li>프로세서: -</li>
+                        <li>메모리: -</li>
+                        <li>그래픽: -</li>
+                        <li>저장공간: -</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+    
+<script src="../JS/게임데이터.js"></script>
+<script src="../JS/게임상세.js"></script>
+</body>
+</html>

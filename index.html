@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈 - Web For Indie Game</title>
+    <link rel="stylesheet" href="./css/홈.css">
+    <link rel="stylesheet" href="./css/메인기본.css">
+</head>
+
+<body>
+<header class="steam-header">
+    <div class="logo-area">
+        <div class="container">
+            <a href="/" class="main-logo"><span class="logo-text">Web For Indie Game</span></a>
+        </div>
+    </div>
+    <nav class="nav-bar">
+        <div class="container">
+            <ul class="menu-list">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="./site/2.카테고리.html">카테고리</a></li>
+                <li><a href="./site/3.즐겨찾기.html">즐겨찾기</a></li>
+                <li><a href="./site/4.검색.html">검색</a></li>
+                <li><a href="./site/5.커뮤니티.html">커뮤니티</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section class="game-section">
+    <h2 class="section-title">추천 게임</h2>
+    <a href="./site/게임상세.html?id=game1" class="featured-banner-link" style="text-decoration: none; color: inherit;">
+        <div class="featured-banner">
+            <div class="featured-main-img">
+                <img id="main-img" src="/img/로그라이크,액션.png" alt="메인 게임 이미지">            
+            </div>
+            <div class="featured-side-info">
+                <h3 class="main-game" id="main-title">로딩 중...</h3>
+                <p class="main-intro" id="main-tags"></p>
+                <div class="price-tag" id="main-price"></div>
+            </div>
+        </div>
+    </a>
+</section>
+
+<div class="game-stack-view">
+    
+    <section class="stack-section">
+        <h2 class="section-title">최신 게임</h2>
+        <div class="game-list-vertical">
+            
+            <a href="./site/게임상세.html?id=game2" style="text-decoration: none; color: inherit;">
+                <div class="mini-card">
+                    <div class="card-img"><img id="g2-img" src="/img/로그라이크,액션.png"></div>
+                    <div class="card-info">
+                        <div class="game-title" id="g2-title">로딩 중...</div>
+                        <div class="game-genre" id="g2-tags"></div>
+                    </div>
+                    <div class="card-price-area"><div class="price-box no-discount"><span class="final-price" id="g2-price"></span></div></div>
+                </div>
+            </a>
+
+            <a href="./site/게임상세.html?id=game3" style="text-decoration: none; color: inherit;">
+                <div class="mini-card">
+                    <div class="card-img"><img id="g3-img" src=""></div>
+                    <div class="card-info">
+                        <div class="game-title" id="g3-title">로딩 중...</div>
+                        <div class="game-genre" id="g3-tags"></div>
+                    </div>
+                    <div class="card-price-area"><div class="price-box no-discount"><span class="final-price" id="g3-price"></span></div></div>
+                </div>
+            </a>
+
+            <a href="./site/게임상세.html?id=game4" style="text-decoration: none; color: inherit;">
+                <div class="mini-card">
+                    <div class="card-img"><img id="g4-img" src=""></div>
+                    <div class="card-info">
+                        <div class="game-title" id="g4-title">로딩 중...</div>
+                        <div class="game-genre" id="g4-tags"></div>
+                    </div>
+                    <div class="card-price-area"><div class="price-box no-discount"><span class="final-price" id="g4-price"></span></div></div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <section class="stack-section">
+        <h2 class="section-title">인기 게임</h2>
+        <div class="game-list-vertical">
+            
+            <a href="./site/게임상세.html?id=game5" style="text-decoration: none; color: inherit;">
+                <div class="mini-card">
+                    <div class="card-img"><img id="g5-img" src=""></div>
+                    <div class="card-info">
+                        <div class="game-title" id="g5-title">로딩 중...</div>
+                        <div class="game-genre" id="g5-tags"></div>
+                    </div>
+                    <div class="card-price-area"><div class="price-box no-discount"><span class="final-price" id="g5-price"></span></div></div>
+                </div>
+            </a>
+
+            <a href="./site/게임상세.html?id=game6" style="text-decoration: none; color: inherit;">
+                <div class="mini-card">
+                    <div class="card-img"><img id="g6-img" src=""></div>
+                    <div class="card-info">
+                        <div class="game-title" id="g6-title">로딩 중...</div>
+                        <div class="game-genre" id="g6-tags"></div>
+                    </div>
+                    <div class="card-price-area"><div class="price-box no-discount"><span class="final-price" id="g6-price"></span></div></div>
+                </div>
+            </a>
+
+            <a href="./site/게임상세.html?id=game7" style="text-decoration: none; color: inherit;">
+                <div class="mini-card">
+                    <div class="card-img"><img id="g7-img" src=""></div>
+                    <div class="card-info">
+                        <div class="game-title" id="g7-title">로딩 중...</div>
+                        <div class="game-genre" id="g7-tags"></div>
+                    </div>
+                    <div class="card-price-area"><div class="price-box no-discount"><span class="final-price" id="g7-price"></span></div></div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+</div>
+    <script src="./JS/게임데이터.js"></script>
+    <script src="./JS/홈.js"></script>
+</body>
+</html>

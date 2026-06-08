@@ -1,0 +1,150 @@
+.main-game {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.main-intro {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.section-title {
+    color: #66c0f4; 
+    font-size: 16px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 5px;
+    font-weight: 400;
+}
+
+
+.featured-banner {
+    display: flex;
+    background-color: #1f3446;
+    height: 300px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.featured-main-img {
+    flex: 2;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-main-img img {
+    width: 100%;    
+    height: 100%;   
+    object-fit: cover; 
+}
+
+
+.featured-side-info {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mini-card:hover {
+    background-color: #39557a;
+    color: #fff;
+    transform: translateX(5px); 
+}
+
+.mini-card {
+    background-color: #273950;
+    height: 65px; 
+    display: flex;
+    align-items: center;
+    padding: 0 15px 0 0; 
+    border-radius: 2px;
+    overflow: hidden;
+    transition: transform 0.2s, background 0.2s;
+    cursor: pointer;
+}
+
+.card-img {
+    width: 120px; 
+    height: 100%;
+    margin-right: 15px;
+    flex-shrink: 0; 
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.card-info {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-price-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px;
+    flex-shrink: 0;
+}
+
+
+.game-title {
+    color: #c7d5e0;
+    font-size: 15px;
+    margin-bottom: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.game-genre {
+    font-size: 12px;
+    color: #556772;
+}
+
+.game-section {
+    margin-bottom: 40px;
+}
+
+.game-stack-view {
+    display: flex;
+    flex-direction: column; 
+    gap: 40px; 
+}
+
+.game-list-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+}
+
+.final-price {
+    color: #acb2b8;
+    font-size: 13px;
+}
+
+.price-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.price-box.no-discount {
+    justify-content: center;
+}
+
+
+.stack-section {
+    width: 100%; 
+}

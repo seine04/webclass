@@ -1,0 +1,135 @@
+.community-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.write-trigger-btn {
+    background-color: #467915; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.write-trigger-btn:hover {
+    background-color: #5c9e1f;
+}
+
+.board-wrapper {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.board-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.board-table th, .board-table td {
+    padding: 15px;
+    border-bottom: 1px solid #2a475e;
+}
+
+.board-table th {
+    background-color: #171a21;
+    color: #66c0f4;
+    font-size: 14px;
+}
+
+.board-table tbody tr {
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.board-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.th-num { width: 10%; text-align: center; color: #556772; }
+.th-author { width: 15%; color: #9099a1; }
+.th-date { width: 15%; color: #556772; }
+td.td-num, td.td-date { text-align: center; color: #556772; }
+td.td-title { color: #c7d5e0; }
+
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-window {
+    background: #1b2838;
+    border: 1px solid #66c0f4;
+    width: 500px;
+    border-radius: 4px;
+    max-width: 90%;
+    padding: 20px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.close-btn { background: none; border: none; color: #556772; cursor: pointer; font-size: 16px; }
+
+.modal-body input, .modal-body textarea {
+    width: 100%;
+    background: #121a24;
+    border: 1px solid #2a475e;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    width: 100%;
+    background: #66c0f4;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hidden { display: none !important; }
+
+.post-delete-btn {
+    background: none;
+    border: none;
+    color: #556772;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 2px;
+    transition: all 0.2s;
+    vertical-align: middle;
+}
+
+.post-delete-btn:hover {
+    background-color: #b31217; 
+    color: white;
+}
+
+.td-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

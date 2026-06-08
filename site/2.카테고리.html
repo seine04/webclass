@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카테고리 - Web For Indie Game</title>
+    <link rel="stylesheet" href="../css/메인기본.css">
+    <link rel="stylesheet" href="../css/2.카테고리.css">
+</head>
+<body>
+    <header class="steam-header">
+    <!-- 1층: 메인 로고 자리 -->
+    <div class="logo-area">
+        <div class="container">
+            <a href="/" class="main-logo">
+                <span class="logo-text">Web For Indie Game</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- 2층: 가로 메뉴 바 -->
+    <nav class="nav-bar">
+        <div class="container">
+            <ul class="menu-list">
+                <li><a href="../index.html">홈</a></li>
+                <li><a href="2.카테고리.html">카테고리</a></li>
+                <li><a href="3.즐겨찾기.html">즐겨찾기</a></li>
+                <li><a href="4.검색.html">검색</a></li>
+                <li><a href="5.커뮤니티.html">커뮤니티</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+<section class="content-area">
+        <div class="container">
+            <h2 class="section-title">장르별 탐색</h2>
+            
+            <div class="category-grid">
+                <a href="javascript:void(0)" class="category-item action" onclick="filterGames('action', event)">
+                    <span class="category-name">액션</span>
+                </a>
+                <a href="javascript:void(0)" class="category-item roguelike" onclick="filterGames('roguelike', event)">
+                    <span class="category-name">로그라이크</span>
+                </a>
+                <a href="javascript:void(0)" class="category-item strategy" onclick="filterGames('strategy', event)">
+                    <span class="category-name">전략</span>
+                </a>
+                <a href="javascript:void(0)" class="category-item rpg" onclick="filterGames('rpg', event)">
+                    <span class="category-name">RPG</span>
+                </a>
+                <a href="javascript:void(0)" class="category-item adventure" onclick="filterGames('adventure', event)">
+                    <span class="category-name">어드벤처</span>
+                </a>
+                <a href="javascript:void(0)" class="category-item simulation" onclick="filterGames('simulation', event)">
+                    <span class="category-name">시뮬레이션</span>
+                </a>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 40px;">해당 장르 게임</h2>
+            <div class="game-list-vertical" id="game-list">
+                
+                <div class="mini-card" data-genre="roguelike action" onclick="location.href='./게임상세.html?id=game1'" style="cursor: pointer;">
+                    <div class="card-img"><img src="../img/로그라이크_액션.png" alt="game1"></div>
+                    <div class="card-info">
+                        <div class="game-title">게임1</div>
+                        <div class="game-genre">로그라이크, 액션</div>
+                    </div>
+                    <div class="card-price-area">
+                        <button class="wish-add-btn" onclick="addToWishlist('game1', '게임1', event)">즐겨찾기</button>
+                        <div class="price-box"><span class="final-price">₩ 51,000</span></div>
+                    </div>
+                </div>
+                
+                <div class="mini-card" data-genre="roguelike strategy" onclick="location.href='./게임상세.html?id=game2'" style="cursor: pointer;">
+                    <div class="card-img"><img src="../img/로그라이크_전략.png" alt="game2"></div>
+                    <div class="card-info">
+                        <div class="game-title">게임2</div>
+                        <div class="game-genre">로그라이크, 전략</div>
+                    </div>
+                    <div class="card-price-area">
+                        <button class="wish-add-btn" onclick="addToWishlist('game2', '게임2', event)">즐겨찾기</button>
+                        <div class="price-box"><span class="final-price">₩ 43,000</span></div>
+                    </div>
+                </div>
+                
+                <div class="mini-card" data-genre="strategy rpg" onclick="location.href='./게임상세.html?id=game3'" style="cursor: pointer;">
+                    <div class="card-img"><img src="../img/전략_RPG.png" alt="game3"></div>
+                    <div class="card-info">
+                        <div class="game-title">게임3</div>
+                        <div class="game-genre">전략, RPG</div>
+                    </div>
+                    <div class="card-price-area">
+                        <button class="wish-add-btn" onclick="addToWishlist('game3', '게임3', event)">즐겨찾기</button>
+                        <div class="price-box"><span class="final-price">₩ 32,000</span></div>
+                    </div>
+                </div>                
+                
+                <div class="mini-card" data-genre="action rpg" onclick="location.href='./게임상세.html?id=game4'" style="cursor: pointer;">
+                    <div class="card-img"><img src="../img/액션_RPG.png" alt="game4"></div>
+                    <div class="card-info">
+                        <div class="game-title">게임4</div>
+                        <div class="game-genre">액션, RPG</div>
+                    </div>
+                    <div class="card-price-area">
+                        <button class="wish-add-btn" onclick="addToWishlist('game4', '게임4', event)">즐겨찾기</button>
+                        <div class="price-box"><span class="final-price">₩ 21,000</span></div>
+                    </div>
+                </div>
+
+                <div class="mini-card" data-genre="action simulation" onclick="location.href='./게임상세.html?id=game5'" style="cursor: pointer;">
+                    <div class="card-img"><img src="../img/액션_시뮬레이션.png" alt="game5"></div>
+                    <div class="card-info">
+                        <div class="game-title">게임5</div>
+                        <div class="game-genre">액션, 시뮬레이션</div>
+                    </div>
+                    <div class="card-price-area">
+                        <button class="wish-add-btn" onclick="addToWishlist('game5', '게임5', event)">즐겨찾기</button>
+                        <div class="price-box"><span class="final-price">₩ 15,000</span></div>
+                    </div>
+                </div>
+
+                <div class="mini-card" data-genre="adventure simulation" onclick="location.href='./게임상세.html?id=game6'" style="cursor: pointer;">
+                    <div class="card-img"><img src="../img/어드벤처_시뮬레이션.png" alt="game6"></div>
+                    <div class="card-info">
+                        <div class="game-title">게임6</div>
+                        <div class="game-genre">어드벤처, 시뮬레이션</div>
+                    </div>
+                    <div class="card-price-area">
+                        <button class="wish-add-btn" onclick="addToWishlist('game6', '게임6', event)">즐겨찾기</button>
+                        <div class="price-box"><span class="final-price">₩ 65,000</span></div>
+                    </div>
+                </div>
+
+                <div class="mini-card" data-genre="simulation rpg" onclick="location.href='./게임상세.html?id=game7'" style="cursor: pointer;">
+                    <div class="card-img"><img src="../img/시뮬레이션_RPG.png" alt="game7"></div>
+                    <div class="card-info">
+                        <div class="game-title">게임7</div>
+                        <div class="game-genre">시뮬레이션, RPG</div>
+                    </div>
+                    <div class="card-price-area">
+                        <button class="wish-add-btn" onclick="addToWishlist('game7', '게임7', event)">즐겨찾기</button>
+                        <div class="price-box"><span class="final-price">₩ 39,000</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../JS/게임데이터.js"></script>
+    <script src="../JS/2.카테고리.js"></script>
+</body>
+</html>
